@@ -6,11 +6,11 @@
 
    <body>
 
-      <input type="text" id="guess" size="6" maxlength="6" value="000000">
+      <input type="text" id="guess" size="6" maxlength="6" value="111111">
 
       <input type="submit" id="Submit1" size="6" value="submit" onclick="gogogo()">
 
-      <textarea id="textField" rows="24" cols="80"></textarea>
+
          
    <script type="text/javascript">      
 
@@ -18,6 +18,11 @@
 
       function gogogo() {         
          //console.log();
+
+         
+         for (var j=0;j<6;++j)
+            target[j] = parseInt(Math.random() * 6);
+
          var guess = document.getElementById("guess").value;
          var A = 0, B = 0;
 
@@ -31,12 +36,10 @@
          }*/
          for (var i=0;i<6;++i)
             if (guess[i]==target[i])++A;
-
-
          // console.log
          alert(A + "A" + B + "B");
       }
    </script>
  
- </canvas></body> 
+ </canvas>000000</body> 
 </html>
