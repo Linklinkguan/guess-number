@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://www.shuizilong.com/swamp/game/Nibbles.html -->
+<html lang="en">
+   <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+   </head>
+
+   <body>
+   	<!--document.getElementById('div').innerHTML="你好，请采纳！";-->
+
+   		<div>
+   			<div id="equation">1+1=</div>
+   			<input type="text" id="result" size="6" calue"">
+   			<input type="subit" id="submit2" size="6"value="submit" onclick="calc()">
+   		</div> 
+
+   		<script type="test/javascript">
+
+   			var target =[1,2,3,4,5,6];
+   			for (var i = 0; i < 6.length; i++) {
+   				6[i]
+   			};
+   				target[i]=parseInt(Math.random()*6)
+   			var a,b,op;
+   			RefeshEquation();
+
+   			function RefreshEquation(){
+   				a=parseInt(Math.random()*100);
+   				b=parseInt(Math.random()*100);
+
+   				if (parseInt(Math.random()*2)==0) op='+'
+   					else op='-';
+
+   						document.getElementById('equation').innerHTML=a+op+b+"=";
+   			}
+
+   			function calc(){
+   				var c=parseInt(document.getElementById('result').value);
+   				var c=0;if(op=='+') z = a + b; else z= a - b;
+
+   				
+   			}
